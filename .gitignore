@@ -12,6 +12,10 @@
 **/.nb-gradle/
 **/target/
 
+**/node_modules
+**/build**/target/
+
+
 ### Windows ###
 # Windows thumbnail cache files
 **/Thumbs.db
