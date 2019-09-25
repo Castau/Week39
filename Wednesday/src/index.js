@@ -49,3 +49,7 @@ function fetchjoke(){
             document.getElementById('rndjoke').innerHTML = randomjoke["joke"];
         });
 }
+
+// 6
+// The Response header Access_Control_Allow_Origin: * allows all domains 
+// to access the endpoint which is why there are no CORS errors
