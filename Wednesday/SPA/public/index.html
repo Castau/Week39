@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h3>Users</h3>
+    <p>All users</p>
+    <table id="usertable">
+    </table>
+    <br>
+    <br>
+    <p>Add user</p>
+    <form>
+      <input type='text' id="addage" placeholder="age"></input>
+      <input type='text' id="addname" placeholder="name"></input>
+      <input type='text' id="addgender" placeholder="gender"></input>
+      <input type='text' id="addemail" placeholder="email"></input>
+      <br>
+      <button id="submitadduser">Add User</button>
+    </form>
+    <br>
+    <br>
+    <p>Type ID to get user</p>
+    <form>
+      <input type='text' id="useridinput"></input>
+      <button id="submituserid">Get User</button>
+      <p id="singleuser"></p>
+      <button id="submitdeleteid">Delete this User</button>
+    </form>
+    <br>
+    <br>
+    <p>Edit user</p>
+    <form>
+      <input type='text' id="editage" placeholder="age"></input>
+      <input type='text' id="editname" placeholder="name"></input>
+      <input type='text' id="editgender" placeholder="gender"></input>
+      <input type='text' id="editemail" placeholder="email"></input>
+      <input type='hidden' id="editid"></input>
+      <br>
+      <button id="submitedituser">Edit User</button>
+    </form>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+
+</html>

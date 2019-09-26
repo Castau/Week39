@@ -53,3 +53,7 @@ function fetchjoke(){
 // 6
 // The Response header Access_Control_Allow_Origin: * allows all domains 
 // to access the endpoint which is why there are no CORS errors
+
+document.getElementById("svgContainer").addEventListener("click", function (event) {
+    document.getElementById("svgOutput").innerHTML = event.target.parentElement.id;
+});
