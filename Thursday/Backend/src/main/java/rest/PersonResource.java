@@ -53,55 +53,6 @@ public class PersonResource {
         personlist.add(new Person("Ursula", "Johansen", "22334455", address3));
 
         try {
-//            em.getTransaction().begin();
-//            Query query1 = em.createNativeQuery(
-//                    "truncate table person.PERSON; "
-//                    + "DELETE FROM person.ADDRESS WHERE `id` > 0; "
-//                    + "ALTER TABLE person.ADDRESS AUTO_INCREMENT = 1;");
-//            query1.executeUpdate();
-//            em.getTransaction().commit();
-
-//            em.getTransaction().begin();
-//            Query query1 = em.createNativeQuery("SET FOREIGN_KEY_CHECKS = 0;");
-//            query1.executeUpdate();
-//            em.getTransaction().commit();
-//            
-//            em.getTransaction().begin();
-//            Query query2 = em.createNativeQuery("truncate table person.PERSON;");
-//            query2.executeUpdate();
-//            em.getTransaction().commit();
-//            
-//            em.getTransaction().begin();
-//            Query query3 = em.createNativeQuery("truncate table person.ADDRESS;");
-//            query3.executeUpdate();
-//            em.getTransaction().commit();
-//            
-//            em.getTransaction().begin();
-//            Query query4 = em.createNativeQuery("SET FOREIGN_KEY_CHECKS = 1; ");
-//            query4.executeUpdate();
-//            em.getTransaction().commit();
-//            
-//            em.getTransaction().begin();
-//            Query query1 = em.createNativeQuery("truncate table person.PERSON;");
-//            query1.executeUpdate();
-//            em.getTransaction().commit();
-//            
-//            em.getTransaction().begin();
-//            Query query2 = em.createNativeQuery("DELETE FROM person.ADDRESS WHERE `id` > 0;");
-//            query2.executeUpdate();
-//            em.getTransaction().commit();
-//            
-//            em.getTransaction().begin();
-//            Query query3 = em.createNativeQuery("ALTER TABLE person.ADDRESS AUTO_INCREMENT = 1;");
-//            query3.executeUpdate();
-//            em.getTransaction().commit();
-            
-//            for(Person p : personlist){
-//                Address address = FACADE.getPersonAddress(p.getAddress());
-//                if(address != null){
-//                    p.setAddress(address);
-//                }
-//            }
             em.getTransaction().begin();
             em.getTransaction().commit();
             for (Person p : personlist) {
