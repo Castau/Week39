@@ -22,6 +22,8 @@ public class ApplicationConfig extends Application {
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(exception.GeneralExceptionMapper.class);
         resources.add(exception.PersonNotFoundExceptionMapper.class);
+        resources.add(filters.CorsRequestFilter.class);
+        resources.add(filters.CorsResponseFilter.class);
         resources.add(org.glassfish.jersey.server.wadl.internal.WadlResource.class);
         resources.add(rest.PersonResource.class);
     }
