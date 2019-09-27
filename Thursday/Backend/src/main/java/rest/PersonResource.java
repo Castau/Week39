@@ -33,7 +33,7 @@ import javax.ws.rs.core.Response;
 @Path("person")
 public class PersonResource {
 
-    private static final EntityManagerFactory EMF = EMF_Creator.createEntityManagerFactory(EMF_Creator.DbSelector.DEV, EMF_Creator.Strategy.CREATE);
+    private static final EntityManagerFactory EMF = EMF_Creator.createEntityManagerFactory(EMF_Creator.DbSelector.DEV, EMF_Creator.Strategy.DROP_AND_CREATE);
     private static final IPersonFacade FACADE = PersonFacadeImpl.getPersonFacade(EMF);
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
@@ -61,26 +61,26 @@ public class PersonResource {
 //            query1.executeUpdate();
 //            em.getTransaction().commit();
 
-            em.getTransaction().begin();
-            Query query1 = em.createNativeQuery("SET FOREIGN_KEY_CHECKS = 0;");
-            query1.executeUpdate();
-            em.getTransaction().commit();
-            
-            em.getTransaction().begin();
-            Query query2 = em.createNativeQuery("truncate table person.PERSON;");
-            query2.executeUpdate();
-            em.getTransaction().commit();
-            
-            em.getTransaction().begin();
-            Query query3 = em.createNativeQuery("truncate table person.ADDRESS;");
-            query3.executeUpdate();
-            em.getTransaction().commit();
-            
-            em.getTransaction().begin();
-            Query query4 = em.createNativeQuery("SET FOREIGN_KEY_CHECKS = 1; ");
-            query4.executeUpdate();
-            em.getTransaction().commit();
-            
+//            em.getTransaction().begin();
+//            Query query1 = em.createNativeQuery("SET FOREIGN_KEY_CHECKS = 0;");
+//            query1.executeUpdate();
+//            em.getTransaction().commit();
+//            
+//            em.getTransaction().begin();
+//            Query query2 = em.createNativeQuery("truncate table person.PERSON;");
+//            query2.executeUpdate();
+//            em.getTransaction().commit();
+//            
+//            em.getTransaction().begin();
+//            Query query3 = em.createNativeQuery("truncate table person.ADDRESS;");
+//            query3.executeUpdate();
+//            em.getTransaction().commit();
+//            
+//            em.getTransaction().begin();
+//            Query query4 = em.createNativeQuery("SET FOREIGN_KEY_CHECKS = 1; ");
+//            query4.executeUpdate();
+//            em.getTransaction().commit();
+//            
 //            em.getTransaction().begin();
 //            Query query1 = em.createNativeQuery("truncate table person.PERSON;");
 //            query1.executeUpdate();
