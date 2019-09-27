@@ -18,6 +18,9 @@ script:
 services:
    - mysql
 
+before_install: 
+- cd /Thursday/Backend/
+
 before_script:
 
 # TODO Add variable to make it simple to be reusable for all semester projects
@@ -27,7 +30,6 @@ before_script:
 
 #- sudo apt-get clean
 #- sudo rm -r /var/lib/apt/lists/*
-- cd /Thursday/Backend/
 - sudo apt-get update
 - sudo apt-get install -y debconf-utils
 - sudo debconf-set-selections <<< 'mysql-apt-config mysql-apt-config/select-server select mysql-8.0'
