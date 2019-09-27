@@ -19,7 +19,7 @@ services:
    - mysql
 
 before_install: 
-- cd /Thursday/Backend/
+- cd Thursday/Backend/
 
 before_script:
 
