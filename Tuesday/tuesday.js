@@ -267,7 +267,7 @@ otherfunction.call(someobj, 'Rigmor'); // refers to someobj
 // becomes the object 'this' refers to. call additionally takes in a list
 // of arguments that are passed to the function using the call() method. In 
 // the argument is a single array of arguments instead of a list. 
-// When bind is called on a function it creates a new function with the same
+// When bind() is called on a function it creates a new function with the same
 // body and scope as the original function, but with 'this' now permanently bound
 // to the first argument of bind. 
 
