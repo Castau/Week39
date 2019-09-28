@@ -32,4 +32,4 @@
 ##### Friday	
 * [Sourcecode](https://github.com/Castau/Week39/tree/master/Friday)	
 
-###### * Excercise 2 (Frontend exercise (last part of exercise from last week)) This part was already done in the thursday assignment, since i used "REST with JAX RS" as the "last weeks most mature excercise". 
+####### * Excercise 2 (Frontend exercise (last part of exercise from last week)) This part was already done in the thursday assignment, since i used "REST with JAX RS" as the "last weeks most mature excercise". 
