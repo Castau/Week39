@@ -14,10 +14,10 @@
 ###### Excercise 7 explain: 
 ###### How this in JavaScript differ from this in Java?  
 ###### In JavaScript 'this' refers to different values depending on where it is used:  
-###### * In a method (a function with an object associated with it), 'this' refers to the owner object.
-###### * Alone, 'this' refers to the global object.
-###### * In a function (no object is associated with it), 'this' refers to the global object.
-###### * In an event, 'this' refers to the element that received the event.
+###### In a method (a function with an object associated with it), 'this' refers to the owner object.
+###### Alone, 'this' refers to the global object.
+###### In a function (no object is associated with it), 'this' refers to the global object.
+###### In an event, 'this' refers to the element that received the event.
 ###### In Java, 'this' refers to the current instance object on which the method is executed. All methods are associated with an object in Java. 
 
 ###### The purpose of the methods call(), apply() and bind()?
