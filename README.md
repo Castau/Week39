@@ -45,7 +45,7 @@
 ###### Same Origin Policy makes it impossiple for anyone not allowed in the CORS heaers to gain access to endpoints, with javascript. A way around it is by using a proxy-server. The not-allowed request is sent to the proxy-server and the proxy-server then sends a server-server request to target server and lastly the proxy server forwards the response back to the original request-sender. 
 ##### Practical part
 ##### For the previous task it was possible to obtain data right from restcountries.eu via an AJAX call made from within your Browser. Use Chrome Developer tools to explain (with focus on the Same Origin Policy) why this is possible. 
-###### This is possible because of the Access-Control-Allow- headers in the api.
-###### The rest of this first assignment (clickable conuntries and the proxy server) can be seen in the sourcecode linked above
+###### If the client, and the api you try to call, are not located on the same Origin the request is not permitted by the browser. One solution is with the use of CORS-headers set by the api. Since the Access-Control-Allow-Origin is sat, it's possible for me to access the api.
+##### The rest of this first assignment (clickable conuntries and the proxy server) can be seen in the sourcecode linked above
 ##### Excercise 2 (Frontend exercise (last part of exercise from last week)) 
 ###### This part was already done in the thursday assignment, since i used "REST with JAX RS" as the "last weeks most mature excercise". 
