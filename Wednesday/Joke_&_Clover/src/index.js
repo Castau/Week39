@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import jokes from "./jokes";
 
+// THIS SECTION WAS OUTCOMMENTED DUE TO EXCERCISE 2.3
 // const allJokes = jokes.getJokes().map(joke => "<li>"+joke+"</li>");
 // document.getElementById("jokes").innerHTML = allJokes.join("");
 
