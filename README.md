@@ -24,7 +24,7 @@
 ##### Thursday	
 * [Sourcecode](https://github.com/Castau/Week39/tree/master/Thursday)	
 * [Frontend at surge](http://camillastaunstrup.surge.sh/)	
-* [Backend on droplet](https://camillastaunstrup.dk/Backend/api/person/)	
+* [Backend on droplet](https://camillastaunstrup.dk/Backend/api/person/) [![Build Status](https://travis-ci.org/Castau/Week39.svg?branch=master)](https://travis-ci.org/Castau/Week39)
 ###### If there are no users on the surge-server, then go to [this url](https://camillastaunstrup.dk/Backend/api/person/data), an then reload the frontend, to make sure there's data in the backends database, for the frontend to fetch. 
 
 ##### Friday	
