@@ -33,15 +33,15 @@
 * [Sourcecode](https://github.com/Castau/Week39/tree/master/Friday)	
 ##### Excercise 1 (Exam preparation exercise about AJAX, CORS and SVG)
 ##### General part
-##### * Explain about the Object Model, and why it’s (very) relevant for modern Web-development
+##### Explain about the Object Model, and why it’s (very) relevant for modern Web-development
 ###### The Document Object Model represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. With Document Object Model methods you can change the document's structure, style, or content. Nodes can also have event handlers attached to them, and once an event is triggered, the event handlers get executed. Document Object Model manipulation is basically required to provide any form of feedback for user actions or render meaningful information to the user.
-##### *	Explain (using an example of your own choice) about JavaScript events, and Event Bubbling
+##### Explain (using an example of your own choice) about JavaScript events, and Event Bubbling
 ###### In the bubbling phase phase events propagates or bubbles back up the DOM tree, from the target element up to the Window, visiting all of the ancestors of the target element one by one. For example, if the user clicks a hyperlink, that click event would pass through the p-element containing the link, the body-element, then the html-element, and the document node. If any ancestor of the target element and the target itself has event handlers assigned for that type of event, those handlers are executed during this phase.
-##### *	Elaborate on how JSON or XML supports communication between subsystems, even when the subsystems are implemented on diﬀerent platforms.
+##### Elaborate on how JSON or XML supports communication between subsystems, even when the subsystems are implemented on diﬀerent platforms.
 ###### With JSON and XML all data is communicated the same way. The data is not dependant on anything else in the recieving system. This ensures very easy communication between all web-systems that can send and/or recieve JSON/XML formatted data. 
-##### * Explain the topic AJAX and how it has changed the way modern web-applications are created
+##### Explain the topic AJAX and how it has changed the way modern web-applications are created
 ###### Fetch is the native Javascript way to execute Ajax. The fetch call returns a promise that resolves to a response object. When the promise resolves, the response is passed to .then. This is where the response could be used. If the request does not complete, .catch takes over and is passed the corresponding error.
-##### * Explain the Same Origin Policy (for AJAX), and different ways to work around it
+##### Explain the Same Origin Policy (for AJAX), and different ways to work around it
 ###### Same Origin Policy makes it impossiple for anyone not allowed in the CORS heaers to gain access to endpoints, with javascript. A way around it is by using a proxy-server. The not-allowed request is sent to the proxy-server and the proxy-server then sends a server-server request to target server and lastly the proxy server forwards the response back to the original request-sender. 
 ##### Practical part
 ###### 1.2 - This is possible because of the Access-Control-Allow- headers in the api.
