@@ -19,10 +19,12 @@
 ###### call() and apply() are similar, they both take in an object which then becomes the object 'this' refers to. call() additionally takes in a list of arguments that are passed to the function using the call() method. In apply() the argument is a single array of arguments instead of a list. When bind() is called on a function it creates a new function with the same body and scope as the original function, but with 'this' now permanently bound to the first argument of bind. 
 
 ##### Wednesday
-* [Sourcecode](https://github.com/Castau/Week39/tree/master/Wednesday/src)	
+* [Sourcecode](https://github.com/Castau/Week39/tree/master/Wednesday)	
+###### Excercise 6 explain: 
+###### The Response header Access_Control_Allow_Origin: * allows all domains to access the endpoint which is why there are no CORS errors in the browser. 
 
 ##### Thursday	
-* []()
+* [Sourcecode](https://github.com/Castau/Week39/tree/master/Thursday)	
 
 ##### Friday	
-* []()
+* [Sourcecode](https://github.com/Castau/Week39/tree/master/Friday)	
