@@ -38,11 +38,11 @@
 ##### *	Explain (using an example of your own choice) about JavaScript events, and Event Bubbling
 ###### In the bubbling phase phase events propagates or bubbles back up the DOM tree, from the target element up to the Window, visiting all of the ancestors of the target element one by one. For example, if the user clicks a hyperlink, that click event would pass through the p-element containing the link, the body-element, then the html-element, and the document node. If any ancestor of the target element and the target itself has event handlers assigned for that type of event, those handlers are executed during this phase.
 ##### *	Elaborate on how JSON or XML supports communication between subsystems, even when the subsystems are implemented on diﬀerent platforms.
-######
+###### With JSON and XML all data is communicated the same way. The data is not dependant on anything else in the recieving system. This ensures very easy communication between all web-systems that can send and/or recieve JSON/XML formatted data. 
 ##### * Explain the topic AJAX and how it has changed the way modern web-applications are created
-######
+###### Fetch is the native Javascript way to execute Ajax. The fetch call returns a promise that resolves to a response object. When the promise resolves, the response is passed to .then. This is where the response could be used. If the request does not complete, .catch takes over and is passed the corresponding error.
 ##### * Explain the Same Origin Policy (for AJAX), and different ways to work around it
-######
+###### Same Origin Policy makes it impossiple for anyone not allowed in the CORS heaers to gain access to endpoints, with javascript. A way around it is by using a proxy-server. The not-allowed request is sent to the proxy-server and the proxy-server then sends a server-server request to target server and lastly the proxy server forwards the response back to the original request-sender. 
 ##### Practical part
 ###### 1.2 - This is possible because of the Access-Control-Allow- headers in the api.
 ###### The rest of this first assignment (clickable conuntries and the proxy server) can be seen in the sourcecode linked above
