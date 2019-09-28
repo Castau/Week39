@@ -31,6 +31,20 @@
 
 ##### Friday	
 * [Sourcecode](https://github.com/Castau/Week39/tree/master/Friday)	
-
+##### Excercise 1 (Exam preparation exercise about AJAX, CORS and SVG)
+##### General part
+##### * Explain about the Object Model, and why it’s (very) relevant for modern Web-development
+###### The Document Object Model represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. With Document Object Model methods you can change the document's structure, style, or content. Nodes can also have event handlers attached to them, and once an event is triggered, the event handlers get executed. Document Object Model manipulation is basically required to provide any form of feedback for user actions or render meaningful information to the user.
+##### *	Explain (using an example of your own choice) about JavaScript events, and Event Bubbling
+###### In the bubbling phase phase events propagates or bubbles back up the DOM tree, from the target element up to the Window, visiting all of the ancestors of the target element one by one. For example, if the user clicks a hyperlink, that click event would pass through the p-element containing the link, the body-element, then the html-element, and the document node. If any ancestor of the target element and the target itself has event handlers assigned for that type of event, those handlers are executed during this phase.
+##### *	Elaborate on how JSON or XML supports communication between subsystems, even when the subsystems are implemented on diﬀerent platforms.
+######
+##### * Explain the topic AJAX and how it has changed the way modern web-applications are created
+######
+##### * Explain the Same Origin Policy (for AJAX), and different ways to work around it
+######
+##### Practical part
+###### 1.2 - This is possible because of the Access-Control-Allow- headers in the api.
+###### The rest of this first assignment (clickable conuntries and the proxy server) can be seen in the sourcecode linked above
 ##### Excercise 2 (Frontend exercise (last part of exercise from last week)) 
 ###### This part was already done in the thursday assignment, since i used "REST with JAX RS" as the "last weeks most mature excercise". 
